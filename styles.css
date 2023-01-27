@@ -86,7 +86,7 @@ body{
 article {
     position: relative;
     padding: 0;
-    max-width: 50rem;
+    max-width: 40rem;
     margin: 0 auto;
 }
 
@@ -169,6 +169,13 @@ margin: 0 2rem;
 } */
 
 /* try the Jsoma way */
+.article2 {
+    position: relative;
+    padding: 0;
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
 #scrolly-2 {
     position: relative;
     display: -webkit-box;
@@ -194,11 +201,11 @@ margin: 0 2rem;
     position: -webkit-sticky;
     position: sticky;
     width: 100%;
-    margin: 0;
+    margin: 1em 2em 1em 2em;
     /* background-color: #8a8a8a; */
     z-index: 0;
     top: 12.5vh;
-    height: 25vh;
+    height: 50vh;
     /* Center everything inside */
     display: flex;
     align-items: center;
@@ -216,6 +223,7 @@ margin: 0 2rem;
 
   .step-2 {
     margin: 0 2em 5rem 2em;
+    height: 50vh;
     background-color: #3b3b3b;
     color: #fff;
   }
@@ -233,6 +241,10 @@ margin: 0 2rem;
     text-align: center;
     padding: 1rem;
     font-size: 1rem;
+  }
+
+  #in-between {
+    padding:30vh 10%;
   }
 
   footer {
