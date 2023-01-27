@@ -144,7 +144,7 @@
     position: sticky;
     width: 100%;
     margin: 0;
-    background-color: #8a8a8a;
+    /* background-color: #8a8a8a; */
     z-index: 0;
     top: 12.5vh;
     height: 75vh;
@@ -152,6 +152,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('./assets/images/DSC09999.jpg');
+    background-size: 100vh;
   }
 
   .sticky-thing p {
