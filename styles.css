@@ -1,11 +1,11 @@
 /* color palette
-    color: #DC0635;
-    color: #BC945C;
-    color: #392F2D;
-    color: #E6DDD5; 
-    color: #DCE4FC;
-    color: #f3ad3d;
-    color: #3d83f3;*/
+    color: #083C64 dark ocean blue;
+    color: #00BBEF NEIP blue;
+    color: #5C5C5C medium gray;
+    color: #8F8F8F light gray; 
+    color: #2A2A2A body text dark gray;
+    color: #DBCC74 light gold
+    */
 
 /* font palette
     font-family: 'Merriweather', serif;
@@ -26,51 +26,59 @@ body{
     justify-content: center;
     font-family: 'Merriweather', serif;
     font-size: 14px;
-    line-height: 1.4em;
+    line-height: 1.2em;
     color: #2A2A2A;
 }
 
-
-h1 {
+/* h1 {
     color: white;
     font-family: 'Merriweather', serif;
     font-size: 34px;
+} */
+
+#logo {
+    /* background-color: #083C64; */
+    text-align: center;
+    padding: 2vh 10%;
 }
 
-#banner{
+#banner {
     background-position: 50% 100%;
-    background-size: cover;
-    padding: 18vh 10%;
+    background-size: 100% 75%;
+    padding: 25vh 10%;
     text-align: center;
-    color: #083C64;
+    background-color: #083C64;
+    /* display: -ms-flexbox;
+    display: flex; */
 }
 
 #banner h1 {
     color: white;
     font-family: 'Merriweather', serif;
-    font-size: 34px;
+    font-size: 4em;
+    text-align: center;
+    line-height: 1.2em;
+    /* flex: 1; */
 }
 
-#banner p {
+/* #banner p {
     font-size: 18px;
     font-family: 'Merriweather', serif;
     color: white;
     text-align: center;
-}
-
-/* img {
-    max-width: 100%;
-    height: auto;
+    display: flex;
+    flex: 1;
 } */
 
-.intro {
+#intro {
     display: flex;
-    background-color: #083C64;
+    /* background-color: #083C64; */
+    padding: 20vh 10%;
 }
 
-.intro p {
+#intro p {
     flex: 1;
-    margin: 50rem;
+    line-height: 1.4em;
 }
 
 
@@ -101,16 +109,16 @@ figure img {
 height: 100%;
 }
 
-/* figcaption {
+figcaption {
 position: relative;
 top: -2.5rem;
 color: white;
-background-color: rgba(255, 255, 255, 0.5);  */
+background-color: rgba(255, 255, 255, 0.5); 
 /* opacity is the 4th parameter */
-/* display: inline-block;
+display: inline-block;
 font-size: 0.75rem;
 padding: 0 0.5rem;
-} */
+}
 
 .step {
 filter: drop-shadow(0px 0px 8px var(--color-text));
@@ -128,6 +136,35 @@ font-size: 1.5rem;
 background-color: white;
 margin: 0 2rem;
 }
-  
 
+.in-between {
+    padding: 12vh 10%;
+    /* background-color: #083C64; */
+}
+
+
+/* Lol now do it again */
+
+figure div.wrapper2 {
+    /** center the image in the box **/
+    display: flex;
+    justify-content: center;
+}
+
+.step2 {
+    filter: drop-shadow(0px 0px 8px var(--color-text));
+}
+
+.step2:last-child {
+    margin-bottom: 0;
+}
+
+.step2 p {
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: white;
+    margin: 0 2rem;
+}
 

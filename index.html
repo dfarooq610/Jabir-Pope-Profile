@@ -9,66 +9,105 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
 
     <!-- give search engines some background info on this page -->
-    <meta name="description" content="Scrollama + Bootstrap Boilerplate - sample webpage to remix and build on for learners">
-    <meta name="keywords" content="digital storytelling, scrollytelling, learning, examples">
+    <meta name="description" content="New England Innocence Project Profile: Jabir Pope">
+    <meta name="keywords" content="innocence, innocence project, wrongful conviction, incarceration, justice">
     <meta name="author" content="Danica Jefferies and Danish Farooq, Northeastern University">
 
     <!-- tell the browser to render differently on mobile devices than in browsers on desktop machines -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div id="banner" style="background-color: #083C64">
-
-        <!-- NEIP logo should go up here, centered-->
-                <!-- <img src="./placeholder.png" alt="..." height="100px" width="100px" />  -->
-
-        <h1>Justice for Jabir Pope</h1>
-        <p>Resilience & Restoring Life After Wrongful Conviction</p>
-
+    <div id="logo">
+         <!-- NEIP logo should go up here, centered-->
+         <img src="./assets/images/NEIP_Blue.jpg" alt="..." height="100px"/>
     </div>
 
-    <main>
+    <div id="banner">
+        <h1>Justice for <span style="color: #DBCC74;">Jabir Pope</span> <br>
+            <span style="font-size: 0.5em; line-height: 0.5em;">Resilience & Restoring Life After Wrongful Conviction</span> </h1>
+    </div>
+
         <div id="intro">
-            <article>
-                <p> 
-                    Joseph Jabir Pope is 70 years old. He enjoys making music with his friends and writing poems to express his faith. He lives on the street he grew up on. But from his cognitive sharpness and lyrical flow, it's unlikely you would guess: Mr. Pope has spent the last 38 years incarcerated for a crime juries and judges agree he did not commit.
-                </p>
-            </article>
+        <article>
+            <p> 
+                Joseph Jabir Pope is 70 years old. He enjoys making music with his friends and writing poems to express his faith. He lives on the street he grew up on. But from his cognitive sharpness and lyrical flow, it's unlikely you would guess: Mr. Pope has spent the last 38 years incarcerated for a crime juries and judges agree he did not commit.
+            </p>
+        </article>
         </div>
 
+    <main>
         <section id="scrolly">
+        <figure> <!-- a `figure` is a useful wrapper around images and captions -->
+            <div class="wrapper">
+                <img id="backdrop-img"/>
+            </div>
+            <figcaption></figcaption>
+        </figure>
+    
+        <article> <!-- a helpful tag to note content that is not related to the background site styling -->
+            <div class="step" data-step="1">
+                <p>
+        Most of the time when I teach HTML to a group of students, they make webpages about something they are interested in - 
+        a band, recipe, place or something like that. People always have something to say, and love saying it to the public online.
+        </p>
+            </div>
+            <div class="step" data-step="2">
+                <p>
+        Invariably (in the US at least) <i>someone</i> in the group picks their dog, or dogs in general. People find common ground with
+        learning partners around animals and pets, and it intenet offers a plethora of pictures of dogs, and puppies, to include in a
+        webpage project.
+        </p>
+            </div>
+            <div class="step" data-step="3">
+                <p>
+        No offense of could to cats and kittens, but in my experience people more often want to showcase their dogs in my classes
+        than cats. I don't what that says about cat vs. dog owners, but that's been my observation.
+        </p>
+            </div>
+        </article>
+        </section>
+
+
+
+        <div id="in-between">
+            <p>Here's a div with extra text to simulate a transition space.</p>
+        </div>
+
+        <section id="scrolly-2">
             <figure> <!-- a `figure` is a useful wrapper around images and captions -->
-                <div class="wrapper">
-                          <img id="backdrop-img"/>
+                <div class="wrapper2">
+                    <img id="backdrop-img"/>
                 </div>
                 <figcaption></figcaption>
-                    </figure>
-      
-                    <article> <!-- a helpful tag to note content that is not related to the background site styling -->
-                        <div class="step" data-step="1">
-                            <p>
-                    Most of the time when I teach HTML to a group of students, they make webpages about something they are interested in - 
-                    a band, recipe, place or something like that. People always have something to say, and love saying it to the public online.
-                  </p>
-                        </div>
-                        <div class="step" data-step="2">
-                            <p>
-                    Invariably (in the US at least) <i>someone</i> in the group picks their dog, or dogs in general. People find common ground with
-                    learning partners around animals and pets, and it intenet offers a plethora of pictures of dogs, and puppies, to include in a
-                    webpage project.
-                  </p>
-                        </div>
-                        <div class="step" data-step="3">
-                            <p>
-                    No offense of could to cats and kittens, but in my experience people more often want to showcase their dogs in my classes
-                    than cats. I don't what that says about cat vs. dog owners, but that's been my observation.
-                  </p>
-                        </div>
-                    </article>
-        </section>
+            </figure>
+        
+            <article> <!-- a helpful tag to note content that is not related to the background site styling -->
+                <div class="step2" data-step="1">
+                    <p>
+            Most of the time when I teach HTML to a group of students, they make webpages about something they are interested in - 
+            a band, recipe, place or something like that. People always have something to say, and love saying it to the public online.
+            </p>
+                </div>
+                <div class="step2" data-step="2">
+                    <p>
+            Invariably (in the US at least) <i>someone</i> in the group picks their dog, or dogs in general. People find common ground with
+            learning partners around animals and pets, and it intenet offers a plethora of pictures of dogs, and puppies, to include in a
+            webpage project.
+            </p>
+                </div>
+                <div class="step2" data-step="3">
+                    <p>
+            No offense of could to cats and kittens, but in my experience people more often want to showcase their dogs in my classes
+            than cats. I don't what that says about cat vs. dog owners, but that's been my observation.
+            </p>
+                </div>
+            </article>
+            </section>
 
     </main>
 
     <script src="script.js"></script>
+    <!-- <script src="test.js"></script> -->
     <script> type="text/javascript"> Project.scrolling.initialize()</script>
+    <script> type="text/javascript"> Project2.scrolling.initialize()</script>
 </body>
