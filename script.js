@@ -24,16 +24,16 @@ Project.scrolling = {
   backdrops: [
     {
       src: "./assets/images/jabir1.jpg",
-      credit: "Danica Jefferies",
-    },
-    {
-      src: "./assets/images/jabir1.jpg",
-      credit: "Danica Jefferies",
-    },
-    {
-      src: "./assets/images/jabir1.jpg",
-      credit: "Danica Jefferies",
-    },
+      credit: "",
+    }
+    // ,{
+    //   src: "./assets/images/jabir1.jpg",
+    //   credit: "Danica Jefferies",
+    // },
+    // {
+    //   src: "./assets/images/jabir1.jpg",
+    //   credit: "Danica Jefferies",
+    // },
   ],
 
   // set up the webpage to scroll

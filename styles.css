@@ -109,16 +109,16 @@ figure img {
 height: 100%;
 }
 
-figcaption {
+/* figcaption {
 position: relative;
 top: -2.5rem;
 color: white;
-background-color: rgba(255, 255, 255, 0.5); 
+background-color: rgba(255, 255, 255, 0.5);  */
 /* opacity is the 4th parameter */
-display: inline-block;
+/* display: inline-block;
 font-size: 0.75rem;
 padding: 0 0.5rem;
-}
+} */
 
 .step {
 filter: drop-shadow(0px 0px 8px var(--color-text));
