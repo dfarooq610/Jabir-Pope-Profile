@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather" >
     <link rel="shortcut icon" type="image/png" href=""/>
     <script src="https://unpkg.com/scrollama"></script>
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
 
     <!-- give search engines some background info on this page -->
@@ -30,7 +31,7 @@
         <div id="intro">
         <article>
             <p> 
-                Joseph Jabir Pope is 70 years old. He enjoys making music with his friends and writing poems to express his faith. He lives on the street he grew up on. But from his cognitive sharpness and lyrical flow, it's unlikely you would guess: Mr. Pope has spent the last 38 years incarcerated for a crime juries and judges agree he did not commit.
+                Joseph Jabir Pope is 70 years old. He enjoys making music with his friends and writing poems to express his faith. He lives on the street he grew up on. But from his cognitive sharpness and lyrical flow, it's unlikely you would guess: Mr. Pope spent the last 38 years incarcerated for a crime judges and juries agree he did not commit.
             </p>
         </article>
         </div>
@@ -46,9 +47,7 @@
     
         <article> <!-- a helpful tag to note content that is not related to the background site styling -->
             <div class="step" data-step="1">
-                <p>
-        Most of the time when I teach HTML to a group of students, they make webpages about something they are interested in - 
-        a band, recipe, place or something like that. People always have something to say, and love saying it to the public online.
+                <p> Jabir 
         </p>
             </div>
             <div class="step" data-step="2">
@@ -73,15 +72,15 @@
             <p>Here's a div with extra text to simulate a transition space.</p>
         </div>
 
-        <section id="scrolly-2">
-            <figure> <!-- a `figure` is a useful wrapper around images and captions -->
+        <!-- <section id="scrolly-2">
+            <figure>
                 <div class="wrapper2">
                     <img id="backdrop-img"/>
                 </div>
                 <figcaption></figcaption>
             </figure>
         
-            <article> <!-- a helpful tag to note content that is not related to the background site styling -->
+            <article>
                 <div class="step2" data-step="1">
                     <p>
             Most of the time when I teach HTML to a group of students, they make webpages about something they are interested in - 
@@ -102,12 +101,40 @@
             </p>
                 </div>
             </article>
+            </section> -->
+
+        <section id="scrolly-2">
+            <article id="article2">
+                <div class="step-2" data-step="1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="step-2" data-step="2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="step-2" data-step="3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="step-2" data-step="4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </article>
+    
+            <div class="sticky-thing">
+                </div>
+                <!-- <p>0</p> --> 
+            </div>
             </section>
+
+
+            <footer>
+                <p>Here's a div with extra text to simulate a transition space.</p>
+            </footer>
+
 
     </main>
 
+    
     <script src="script.js"></script>
     <!-- <script src="test.js"></script> -->
     <script> type="text/javascript"> Project.scrolling.initialize()</script>
-    <script> type="text/javascript"> Project2.scrolling.initialize()</script>
 </body>
