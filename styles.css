@@ -30,7 +30,6 @@ body{
     color: #2A2A2A;
 }
 
-
 /* h1 {
     color: white;
     font-family: 'Merriweather', serif;
@@ -73,13 +72,13 @@ body{
 
 #intro {
     display: flex;
-    background-color: #083C64;
+    /* background-color: #083C64; */
     padding: 20vh 10%;
 }
 
-.intro p {
+#intro p {
     flex: 1;
-    margin: 50rem;
+    line-height: 1.4em;
 }
 
 
