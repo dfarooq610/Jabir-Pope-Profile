@@ -119,7 +119,6 @@ figure img {
 
 .in-between {
   padding: 12vh 10%;
-  /* background-color: #083C64; */
 }
 
 #in-between {
@@ -132,13 +131,6 @@ h3 {
   color: #dbcc74;
   padding: 1.4em;
   line-height: 1.4em;
-}
-
-.article2 {
-  position: relative;
-  padding: 0;
-  max-width: 20rem;
-  margin: 0 auto;
 }
 
 #scrolly-2 {
@@ -176,16 +168,8 @@ h3 {
   align-items: center;
   justify-content: center;
   /* background-image: url('./assets/images/DSC09999.jpg'); */
-  background-color: red;
-  background-size: 100%;
+  /* background-size: 100%; */
 }
-
-/* .sticky-thing p {
-    padding: 1rem;
-    font-size: 8rem;
-    font-weight: 900;
-    color: #fff;
-  } */
 
 .step-2 {
   margin: 0 1em 1rem 2em;
@@ -199,17 +183,21 @@ h3 {
   margin-bottom: 0;
 }
 
-/* .step-2.is-active {
-    background-color: goldenrod;
-    color: #3b3b3b;
-  } */
-
 .step-2 p {
   text-align: center;
   padding: 1rem;
   font-size: 1rem;
 }
 
+.audioWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#gallery {
+  padding: 30vh 10%;
+}
 
 a:link {
   color: #dbcc74;
@@ -270,4 +258,73 @@ footer {
 
 footer p {
   margin: 0;
+}
+a:hover {
+  color: #00bbef;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 700px) {
+  /* MOBILE */
+  #scrolly-2 {
+    display: block;
+  }
+  .sticky-thing {
+    margin: 0 0 0 0;
+    top: 0em;
+    height: 40vh;
+    text-align: center;
+    z-index: 1;
+  }
+  figure.nobackground {
+    background-color: transparent;
+  }
+  #stickyImg {
+    height: 100%;
+  }
+  #article2 {
+    max-width: 30em;
+    align-items: center;
+    justify-content: center;
+  }
+  .step-2 {
+    height: 35vh;
+    margin: 0 3em 0 3em;
+  }
+  .audioWrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1150px) {
+  /* SLIGHTLY LARGER */
+  #scrolly-2 {
+    display: flex;
+  }
+  .sticky-thing {
+    margin: 1em 0 0 2em;
+    /* margin: 0 0 0 0; */
+    top: 10em;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+  }
+  figure.nobackground {
+    background-color: transparent;
+  }
+  #stickyImg {
+    height: 100%;
+  }
+  #article2 {
+    max-width: 40em;
+    align-items: right;
+    text-align: right;
+  }
+  .step-2 {
+    height: 40vh;
+    margin: 0 2em 0 2em;
+  }
+  .audioWrapper {
+    display: flex;
+  }
 }

@@ -73,9 +73,6 @@ Project.scrolling = {
     const image = Project.scrolling.figure.getElementsByTagName("img")[0];
     image.src = Project.scrolling.backdrops[index].src;
     image.classList.add = "fade-in";
-    // TODO: make this caption text a link
-    document.getElementsByTagName("figcaption")[0].innerHTML =
-      Project.scrolling.backdrops[index].credit;
   },
 
   // called by scrollama when the step is being entered
