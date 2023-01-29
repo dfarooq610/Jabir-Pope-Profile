@@ -23,17 +23,25 @@ Project.scrolling = {
   // a list of the backdrop images, ordered so they match the `step` elements on the page
   backdrops: [
     {
-      src: "./assets/images/jabir1.jpg",
+      src: "./assets/images/jabir_steps.jpg",
       credit: "",
-    }
-    // ,{
-    //   src: "./assets/images/jabir1.jpg",
-    //   credit: "Danica Jefferies",
-    // },
-    // {
-    //   src: "./assets/images/jabir1.jpg",
-    //   credit: "Danica Jefferies",
-    // },
+    },
+    {
+      src: "./assets/images/jabir_steps.jpg",
+      credit: "",
+    },
+    {
+      src: "./assets/images/jabir_steps.jpg",
+      credit: "",
+    },
+    {
+      src: "./assets/images/jabir_couch.jpg",
+      credit: "",
+    },
+    {
+      src: "./assets/images/jabir_book.jpg",
+      credit: "",
+    },
   ],
 
   // set up the webpage to scroll
@@ -101,12 +109,14 @@ Project.scrolling = {
 };
 
 
+// FOR SCROLLY-2 (SIDE PANEL SCROLLY)
+
   // using d3 for convenience
   var main = document.querySelector("main");
   var scrolly = main.querySelector(".scrolly-2");
   var sticky = scrolly.querySelector(".sticky-thing");
-  var article = scrolly.querySelector("article");
-  var steps2 = article.querySelectorAll(".step-2");
+  var article = scrolly.querySelector("article2");
+  var steps = article.querySelectorAll(".step-2");
 
   // initialize the scrollama
   var scroller2 = scrollama();
@@ -118,19 +128,19 @@ Project.scrolling = {
 
   // remove is-active from all steps
   // then add is-active to this step
-  steps2.forEach(step2 => step2.classList.remove('is-active'));
+  steps.forEach(step => step.classList.remove('is-active'));
   el.classList.add('is-active');
 
   // update graphic based on step
-  sticky.querySelector("p").innerText = el.dataset.step2;
+  sticky.querySelector(".p").innerText = el.dataset.step;
+  // sticky.getElementsByClassName(".background-image") = el.dataset.step2;
   }
-
 
   // just comment out debug: true to make lines go away
   function init() {
   scroller2
       .setup({
-      step2: "#scrolly2 .article2 .step-2",
+      steps: "#scrolly2 .article2 .step-2",
       offset: 0.33,
       debug: true
       })

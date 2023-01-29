@@ -19,109 +19,90 @@
 
 
 body{
-    margin: 0px;
-    padding: 0px;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Merriweather', serif;
-    font-size: 14px;
-    line-height: 1.2em;
-    color: #2A2A2A;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Merriweather', serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  color: #2A2A2A;
 }
 
 /* h1 {
-    color: white;
-    font-family: 'Merriweather', serif;
-    font-size: 34px;
+  color: white;
+  font-family: 'Merriweather', serif;
+  font-size: 34px;
 } */
 
 #logo {
-    /* background-color: #083C64; */
-    text-align: center;
-    padding: 2vh 10%;
+  /* background-color: #083C64; */
+  text-align: center;
+  padding: 2vh 10%;
 }
 
 #banner {
-    background-position: 50% 100%;
-    background-size: 100% 75%;
-    padding: 25vh 10%;
-    text-align: center;
-    background-color: #083C64;
-    /* display: -ms-flexbox;
-    display: flex; */
+  background-position: 50% 100%;
+  background-size: 100% 75%;
+  padding: 28vh 10%;
+  text-align: center;
+  background-color: #083C64;
+  font-family: 'Merriweather', serif;
+  color: white;
 }
 
 #banner h1 {
-    color: white;
-    font-family: 'Merriweather', serif;
-    font-size: 4em;
-    text-align: center;
-    line-height: 1.2em;
-    /* flex: 1; */
+  font-size: 3em;
+  text-align: center;
+  line-height: 1.2em;
 }
 
-/* #banner p {
-    font-size: 18px;
-    font-family: 'Merriweather', serif;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex: 1;
-} */
+#banner h2{
+  font-size: 1.6em;
+  text-align: center;
+  line-height: 1.4em;
+}
 
 #intro {
-    display: flex;
-    /* background-color: #083C64; */
-    padding: 20vh 10%;
+  /* background-color: #083C64; */
+  padding: 2vh 10%;
 }
 
 #intro p {
-    flex: 1;
-    line-height: 1.4em;
+  line-height: 1.4em;
 }
 
 
 /* main body, scrollytelling part styles */
 article {
-    position: relative;
-    padding: 0;
-    max-width: 40rem;
-    margin: 0 auto;
+  position: relative;
+  padding: 0;
+  max-width: 40rem;
+  margin: 0 auto;
 }
 
 figure {
-position: sticky; /** don't move this within the bounds of the #scrolly wrapper **/
-left: 0;
-width: 100%;
-height: 100%;
-margin: 0;
-background-color: #083C64;
+  position: sticky; /** don't move this within the bounds of the #scrolly wrapper **/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #083C64;
 }
 
 figure div.wrapper {
-/** center the image in the box **/
-display: flex;
-justify-content: center;
+  /** center the image in the box **/
+  display: flex;
+  justify-content: center;
 }
 
 figure img {
-height: 100%;
+  height: 100%;
 }
 
-/* figcaption {
-position: relative;
-top: -2.5rem;
-color: white;
-background-color: rgba(255, 255, 255, 0.5);  */
-/* opacity is the 4th parameter */
-/* display: inline-block;
-font-size: 0.75rem;
-padding: 0 0.5rem;
-} */
-
 .step {
-filter: drop-shadow(0px 0px 8px var(--color-text));
+  filter: drop-shadow(0px 0px 8px var(--color-text));
 }
 
 .step:last-child {
@@ -143,32 +124,7 @@ margin: 0 2rem;
 }
 
 
-/* Lol now do it again */
-
-/* figure div.wrapper2 {
-    * center the image in the box *
-    display: flex;
-    justify-content: center;
-}
-
-.step2 {
-    filter: drop-shadow(0px 0px 8px var(--color-text));
-}
-
-.step2:last-child {
-    margin-bottom: 0;
-}
-
-.step2 p {
-    border-radius: 0.5rem;
-    text-align: center;
-    padding: 1rem;
-    font-size: 1.5rem;
-    background-color: white;
-    margin: 0 2rem;
-} */
-
-/* try the Jsoma way */
+/* FOR SCROLLY-2 */
 .article2 {
     position: relative;
     padding: 0;
@@ -210,7 +166,8 @@ margin: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('./assets/images/DSC09999.jpg');
+    /* background-image: url('./assets/images/DSC09999.jpg'); */
+    background-color: red;
     background-size: 100%;
   }
 
@@ -232,10 +189,10 @@ margin: 0 2rem;
     margin-bottom: 0;
   }
 
-  .step-2.is-active {
+  /* .step-2.is-active {
     background-color: goldenrod;
     color: #3b3b3b;
-  }
+  } */
 
   .step-2 p {
     text-align: center;
