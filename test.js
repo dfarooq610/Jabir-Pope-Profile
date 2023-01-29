@@ -1,88 +1,36 @@
-// IMPLEMENT SCROLLAMA FOR ID="SCROLLY"
-const Project = {};
+// Try new way
+// Source: http://rstudio-pubs-static.s3.amazonaws.com/492661_bbe5d5e670b74ddab6d05cf3ee909a33.html
 
-Project.scrolling = {
-  // these hold references to helpers and rendered page elements (filled in by `initialize`)
-  scroller: undefined, // an instance of scrollama
-  steps: undefined, // an array of all the step elements
+(function() {
+  var scrolla = scrollama(),
+      selector = "div.figure, img, table, video, embed, iframe, .html-widget",
+      container = document.querySelector(".exhibit");
 
-  // a list of the backdrop images, ordered so they match the `step` elements on the page
-  backdrops: [
-    {
-      src: "./assets/images/jabir1.jpg",
-      credit: "Danica",
-    },
-    {
-      src: "/assets/images/jabir1.jpg",
-      credit: "https://www.wisdompanel.com/en-us/blog/sibling-genetics-in-dogs",
-    },
-    {
-      src: "/assets/images/jabir1.jpg",
-      credit:
-        "https://www.marketwatch.com/story/owning-a-cat-vs-owning-a-dog-which-pet-makes-better-financial-sense-11649445375",
-    },
-  ],
+  scrolla.setup({"step": ".section, " + selector})
+    .onStepEnter(res => {
+      var el = res.element;
+      el.classList.add("is-active");
+      var ex = el;
+      if (el.classList.contains("section")) {
+        ex = el.querySelector(selector);
+        if (!ex) {
+          container.innerHTML = "";
+          return;
+        }
+      }
+      if (ex.nodeName === "img" && ex.parentNode.classList.contains("figure")) {
+        ex = ex.parentNode;
+      }
+      container.innerHTML = "";
+      container.append(ex.cloneNode(true));
+      var els = container.querySelectorAll("*[width]");
+      for (var i = 0; i < els.length; i++) {
+        els[i].removeAttribute('width');
+      }
+    })
+    .onStepExit(res => {
+      res.element.classList.remove("is-active");
+    });
 
-  // set up the webpage to scroll
-  initialize: () => {
-    // grab the elements on the page that are related to the scrolling
-    const scrollWrapper = document.getElementById("scrolly");
-    Project.scrolling.figure = scrollWrapper.getElementsByTagName("figure")[0];
-    const article = scrollWrapper.getElementsByTagName("article")[0];
-    Project.scrolling.steps = Array.from(
-      article.getElementsByClassName("step")
-    ); // convert from HTMLCollection to Array for ease of use later
-    // intialize the scrollama helper
-    Project.scrolling.scroller = scrollama();
-    Project.scrolling.scroller
-      .setup({
-        step: "#scrolly article .step",
-        offset: 0.9,
-        debug: false,
-      })
-      .onStepEnter(Project.scrolling.handleStepEnter)
-      .onStepExit(Project.scrolling.handleStepExit);
-    // setup the default view to be the right size and include first step
-    Project.scrolling.handleResize();
-    Project.scrolling.setBackdropImage(0); // remember: 0 means the first item in an array
-  },
-
-  // call this to switch the background image
-  setBackdropImage: (index) => {
-    const image = Project.scrolling.figure.getElementsByTagName("img")[0];
-    image.src = Project.scrolling.backdrops[index].src;
-    image.classList.add = "fade-in";
-    // TODO: make this caption text a link
-    document.getElementsByTagName("figcaption")[0].innerHTML =
-      Project.scrolling.backdrops[index].credit;
-  },
-
-  // called by scrollama when the step is being entered
-  handleStepEnter: (stepInfo) => {
-    // stepInfo = { element, directihandle, index }
-    // console.log(`Switched to step ${stepInfo.index}`);
-    // TODO: add an `is-active` class on the step that we switched to (and remove from all others)
-    // and switch the background image to match the step content
-    Project.scrolling.setBackdropImage(stepInfo.index);
-  },
-
-  // called by scrollama when moving out of a step
-  handleStepExit: (stepInfo) => {
-    // we don't make any transitions when a step scrolls out of view
-  },
-
-  // called to get content to be the right size to fit the device
-  handleResize: () => {
-    const stepH = Math.floor(window.innerHeight * 1); // update step heights
-    Project.scrolling.steps.forEach(
-      (step) => (step.style.height = stepH + "px")
-    );
-    const figureHeight = window.innerHeight;
-    const figureMarginTop = 0;
-    Project.scrolling.figure.style.height = figureHeight + "px";
-    Project.scrolling.figure.style.top = figureMarginTop + "px";
-    Project.scrolling.figure.getElementsByClassName("wrapper")[0].style.height =
-      figureHeight + "px";
-    Project.scrolling.scroller.resize(); // tell scrollama to update new element dimensions
-  },
-};
+  window.addEventListener("resize", scrolla.resize);
+})();
