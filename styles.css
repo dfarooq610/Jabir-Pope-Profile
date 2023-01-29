@@ -137,13 +137,6 @@ h3 {
   line-height: 1.4em;
 }
 
-.article2 {
-    position: relative;
-    padding: 0;
-    max-width: 20rem;
-    margin: 0 auto;
-}
-
 #scrolly-2 {
     position: relative;
     display: -webkit-box;
@@ -179,16 +172,8 @@ h3 {
     align-items: center;
     justify-content: center;
     /* background-image: url('./assets/images/DSC09999.jpg'); */
-    background-color: red;
-    background-size: 100%;
+    /* background-size: 100%; */
   }
-
-  /* .sticky-thing p {
-    padding: 1rem;
-    font-size: 8rem;
-    font-weight: 900;
-    color: #fff;
-  } */
 
   .step-2 {
     margin: 0 1em 1rem 2em;
@@ -211,6 +196,12 @@ h3 {
     text-align: center;
     padding: 1rem;
     font-size: 1rem;
+  }
+
+  .audioWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #gallery {
@@ -240,4 +231,30 @@ h3 {
 
   a:hover{
     color: #00BBEF;
+  }
+
+  /* RESPONSIVE DESIGN */
+  @media (max-width:550px){ /* MOBILE */
+    #stickyImg{
+      width: 100%;
+    }
+    #scrolly-2 {
+      display: block;
+    }
+    .sticky-thing{
+      margin: 0 0 1em 0;
+      top: 1em;
+      height: 40vh;
+      align-items: center;
+      justify-content: center;
+    }
+    figure.nobackground{
+      background-color: transparent;
+    }
+    .step-2{
+      height: 35vh;
+    }
+    .audioWrapper{
+      display: flex;
+    }
   }
