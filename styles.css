@@ -116,11 +116,23 @@ figure img {
   padding: 10vh 10%;
   background-color: white;
   color: #2a2a2a;
+  display: flex;
 }
+
+.video{
+  flex: 1;
+  text-align: center;
+  height: auto;
+}
+
 
 .spacer {
   padding: 3vh 10%;
   background-color: #083C64;
+}
+
+.source {
+  font-size: 0.75em;
 }
 
 /* FOR SCROLLY-2 */
@@ -192,6 +204,11 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+audio {
+  height: 2em;
+  padding: 2vh;
 }
 
 #gallery {
@@ -274,7 +291,7 @@ a:hover {
     top: 0em;
     height: 40vh;
     text-align: center;
-    z-index: 1;
+    z-index: 0;
   }
   figure.nobackground {
     background-color: transparent;
@@ -293,6 +310,9 @@ a:hover {
   }
   .audioWrapper {
     display: flex;
+  }
+  iframe {
+    width: auto;
   }
 }
 

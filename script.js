@@ -35,6 +35,14 @@ Project.scrolling = {
       credit: "",
     },
     {
+      src: "./assets/images/jabir_couch.jpg",
+      credit: "",
+    },
+    {
+      src: "./assets/images/jabir_couch.jpg",
+      credit: "",
+    },
+    {
       src: "./assets/images/jabir_book.jpg",
       credit: "",
     }
