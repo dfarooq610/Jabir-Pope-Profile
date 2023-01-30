@@ -35,13 +35,9 @@ Project.scrolling = {
       credit: "",
     },
     {
-      src: "./assets/images/jabir_couch.jpg",
-      credit: "",
-    },
-    {
       src: "./assets/images/jabir_book.jpg",
       credit: "",
-    },
+    }
   ],
 
   // set up the webpage to scroll
