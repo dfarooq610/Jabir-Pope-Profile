@@ -11,6 +11,10 @@
   <script src="https://unpkg.com/scrollama"></script>
   <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
   <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
 
   <!-- give search engines some background info on this page -->
   <meta
@@ -30,39 +34,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-  <div id="logo">
-    <a
-      href="https://www.newenglandinnocence.org/"
-      target="blank"
-      rel="noopener noreferrer"
-      ><img src="./assets/images/NEIP_blue.png" alt="..." height="100px"
-    /></a>
-  </div>
-
+  <nav>
+    <div id="logo">
+      <a
+        href="https://www.newenglandinnocence.org/"
+        target="blank"
+        rel="noopener noreferrer"
+      >
+        <img src="./assets/images/NEIP_blue.png" alt="..." height="100px" />
+      </a>
+    </div>
+  </nav>
   <div id="banner">
-    <h1>Justice for <span style="color: #dbcc74">Jabir Pope</span></h1>
-    <h2>Resilience & Restoring Life After Wrongful Conviction</h2>
+    <div id="title">
+      <h1>Justice for <span style="color: #dbcc74">Jabir Pope</span></h1>
+      <h2>Resilience & Restoring Life After Wrongful Conviction</h2>
+      <hr />
+    </div>
+    <article>
+      <p>Joseph Jabir Pope is 70 years old.</p>
+
+      <p>
+        Born and raised in Boston, he lives with his siblings on the Roxbury
+        street they grew up on. He's the father of one daughter and cares deeply
+        about his community.
+      </p>
+
+      <p>
+        But an unexpected twist in his 30s highlights a disparaging reality many
+        people in the U.S. face - Jabir spent 38 years incarcerated for a crime
+        everyone, including judges and juries, agrees he did not commit.
+      </p>
+    </article>
+    <div id="scroll-down-indicator">
+      <i class="fa fa-angle-double-down" style="font-size: 48px"></i>
+      <p>Scroll down to learn more about his story</p>
+    </div>
   </div>
 
   <main>
-    <div id="intro">
-      <article>
-        <p>Joseph Jabir Pope is 70 years old.</p>
-
-        <p>
-          Born and raised in Boston, he lives with his siblings on the Roxbury
-          street they grew up on. He's the father of one daughter and cares
-          deeply about his community.
-        </p>
-
-        <p>
-          But an unexpected twist in his 30s highlights a disparaging reality
-          many people in the U.S. face – Jabir spent 38 years incarcerated for a
-          crime everyone, including judges and juries, agrees he did not commit.
-        </p>
-      </article>
-    </div>
-
     <section id="scrolly">
       <figure>
         <div class="wrapper">
