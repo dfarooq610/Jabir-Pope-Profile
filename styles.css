@@ -62,6 +62,7 @@ body {
 #intro{
   padding: 2vh 10% 20vh 10%;
   line-height: 1.2em;
+  text-align: left;
 }
 
 
@@ -112,11 +113,14 @@ figure img {
 }
 
 .in-between {
-  padding: 12vh 10%;
+  padding: 10vh 10%;
+  background-color: white;
+  color: #2a2a2a;
 }
 
-#in-between {
-  padding: 30vh 10%;
+.spacer {
+  padding: 3vh 10%;
+  background-color: #083C64;
 }
 
 /* FOR SCROLLY-2 */
@@ -126,7 +130,7 @@ figure img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #f3f3f3;
+  background-color: #083C64;
   padding: 1rem;
 }
 
@@ -161,16 +165,15 @@ figure img {
 
 h3 {
   text-align: left;
-  color: #dbcc74;
+  color: #2A2A2A;
   padding: 1em 0 0 1em;
   line-height: 1.4em;
 }
 
 .step-2 {
   margin: 0 1em 1rem 2em;
-  height: 50vh;
-  background-color: #3b3b3b;
-  color: #fff;
+  height: 35vh;
+  background-color: #dbcc74;
   border-radius: 0.3rem;
 }
 
@@ -182,6 +185,7 @@ h3 {
   text-align: left;
   padding: 0 1rem 1rem 1rem;
   font-size: 1rem;
+  color: #2A2A2A;
 }
 
 .audioWrapper {
