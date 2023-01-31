@@ -38,7 +38,7 @@ body {
 #banner {
   display: flex;
   flex-direction: column;
-  padding: 12.5vh 10vw 0vh 10vw;
+  padding: 10vh 10vw 5vh 10vw;
   text-align: center;
   background-color: #083c64;
   font-family: "Merriweather", serif;
@@ -56,11 +56,11 @@ body {
   font-size: 1.6em;
   text-align: center;
   line-height: 1.4em;
-  padding: 0 0 8vh 0;
+  padding: 0 0 4vh 0;
 }
 
 #intro{
-  padding: 2vh 10% 20vh 10%;
+  padding: 2vh 10% 2vh 10%;
   line-height: 1.2em;
   text-align: left;
 }
@@ -194,10 +194,6 @@ h3 {
   color: #2A2A2A;
 }
 
-.step-2 h3{
-  color: #083C64;
-}
-
 .audioWrapper {
   display: flex;
   align-items: center;
@@ -283,9 +279,12 @@ button:hover{
 }
 
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 999px) {
+/* RESPONSIVE DESIGN*/
+@media (max-width: 700px) {
   /* MOBILE */
+  #banner{
+    padding: 10vh 5vh 28vh 5vh;
+  }
   #scrolly-2 {
     display: block;
   }
@@ -323,8 +322,11 @@ button:hover{
   }
 }
 
-@media (min-width: 1000px) and (max-width:1299px) {
+@media (min-width: 701px) and (max-width:1299px) {
   /* SLIGHTLY LARGER */
+  #banner{
+    padding: 10vh 5vh 5vh 5vh;
+  }
   #scrolly-2 {
     display: flex;
   }
