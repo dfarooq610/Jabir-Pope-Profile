@@ -75,10 +75,6 @@ Project.scrolling = {
 
   // called by scrollama when the step is being entered
   handleStepEnter: (stepInfo) => {
-    // stepInfo = { element, directihandle, index }
-    // console.log(`Switched to step ${stepInfo.index}`);
-    // TODO: add an `is-active` class on the step that we switched to (and remove from all others)
-    // and switch the background image to match the step content
     Project.scrolling.setBackdropImage(stepInfo.index);
   },
 

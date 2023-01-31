@@ -286,6 +286,9 @@ button:hover{
   #banner{
     padding: 10vh 5vh 28vh 5vh;
   }
+  .step {
+    z-index: 0;
+  }
   #scrolly-2 {
     display: block;
   }
@@ -330,6 +333,9 @@ button:hover{
   }
   #scrolly-2 {
     display: flex;
+  }
+  .step {
+    z-index: 0;
   }
   .sticky-thing {
     margin: 1em 0 0 2em;
