@@ -95,6 +95,7 @@ figure img {
 
 .step {
   filter: drop-shadow(0px 0px 8px var(--color-text));
+  z-index: 0;
 }
 
 .step:last-child {
@@ -115,6 +116,7 @@ figure img {
 /* In between scrolling segments */
 .in-between {
   padding: 5vh 10% 5vh 10%;
+  height: 90vh;
   background-color: white;
   color: #2a2a2a;
   display: flex;
@@ -161,8 +163,7 @@ cite {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-image: url('./assets/images/DSC09999.jpg'); */
-  /* background-size: 100%; */
+  background-size: contain;
 }
 
 h3 {
