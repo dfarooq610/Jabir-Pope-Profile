@@ -284,7 +284,7 @@ button:hover{
 
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 700px) {
+@media (max-width: 999px) {
   /* MOBILE */
   #scrolly-2 {
     display: block;
@@ -323,7 +323,7 @@ button:hover{
   }
 }
 
-@media (min-width: 701px) and (max-width: 1150px) {
+@media (min-width: 1000px) and (max-width:1299px) {
   /* SLIGHTLY LARGER */
   #scrolly-2 {
     display: flex;
@@ -331,7 +331,7 @@ button:hover{
   .sticky-thing {
     margin: 1em 0 0 2em;
     top: 10em;
-    height: 40vh;
+    height: 60vh;
     align-items: center;
     justify-content: center;
   }
