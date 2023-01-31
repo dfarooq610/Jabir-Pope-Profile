@@ -117,7 +117,7 @@ figure img {
 /* In between scrolling segments */
 .in-between {
   padding: 5vh 10% 5vh 10%;
-  height: 90vh;
+  height: 60vh;
   background-color: white;
   color: #2a2a2a;
   display: flex;
