@@ -66,7 +66,6 @@ body {
 }
 
 
-
 /* main body, scrollytelling part styles */
 article {
   position: relative;
@@ -112,26 +111,17 @@ figure img {
   line-height: 1.4rem;
 }
 
+
+/* In between scrolling segments */
 .in-between {
-  padding: 10vh 10%;
+  padding: 5vh 10% 5vh 10%;
   background-color: white;
   color: #2a2a2a;
   display: flex;
+  flex-direction: column;
 }
 
-.video{
-  flex: 1;
-  text-align: center;
-  height: auto;
-}
-
-
-.spacer {
-  padding: 3vh 10%;
-  background-color: #083C64;
-}
-
-.source {
+cite {
   font-size: 0.75em;
 }
 
@@ -189,15 +179,23 @@ h3 {
   border-radius: 0.3rem;
 }
 
+#longer{
+  height: 45vh;
+}
+
 .step-2:last-child {
   margin-bottom: 0;
 }
 
 .step-2 p {
   text-align: left;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 0 1rem;
   font-size: 1rem;
   color: #2A2A2A;
+}
+
+.step-2 h3{
+  color: #083C64;
 }
 
 .audioWrapper {
@@ -211,29 +209,19 @@ audio {
   padding: 2vh;
 }
 
-#gallery {
-  padding: 30vh 10%;
+.spacer {
+  padding: 3vh 10%;
+  background-color: #083C64;
 }
 
-a:link {
-  color: #dbcc74;
-}
-
-a:visited {
-  color: #dbcc74;
-}
-
-a:hover {
-  color: #00bbef;
-}
-
+/* GALLERY */
 #gallery {
   background-color: #dbcc74;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 2.5vh 5vw;
-  height: 75vh;
+  height: 45vh;
 }
 
 #button-list {
@@ -259,9 +247,9 @@ a:hover {
 
 #gallery-title {
   font-family: "Merriweather", serif;
-  font-size: 2em;
-  color: #2a2a2a;
-  margin-bottom: 5vh;
+  font-size: 1.8em;
+  color: #2A2A2A;
+  margin-bottom: 4vh;
 }
 
 footer {
@@ -273,12 +261,27 @@ footer {
   font-size: 0.9em;
 }
 
-footer p {
-  margin: 0;
+/* All links */
+a:link {
+  color: #dbcc74;
 }
+
+a:visited {
+  color: #dbcc74;
+}
+
 a:hover {
   color: #00bbef;
 }
+
+footer p {
+  margin: 0;
+}
+
+button:hover{
+  color: #00bbef;
+}
+
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 700px) {
@@ -291,7 +294,7 @@ a:hover {
     top: 0em;
     height: 40vh;
     text-align: center;
-    z-index: 0;
+    z-index: 1;
   }
   figure.nobackground {
     background-color: transparent;
@@ -308,11 +311,15 @@ a:hover {
     height: 35vh;
     margin: 0 3em 0 3em;
   }
+  #longer{
+    height: 50vh;
+  }
   .audioWrapper {
     display: flex;
   }
-  iframe {
-    width: auto;
+  video {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -323,7 +330,6 @@ a:hover {
   }
   .sticky-thing {
     margin: 1em 0 0 2em;
-    /* margin: 0 0 0 0; */
     top: 10em;
     height: 40vh;
     align-items: center;
@@ -344,7 +350,14 @@ a:hover {
     height: 40vh;
     margin: 0 2em 0 2em;
   }
+  #longer{
+    height: 50vh;
+  }
   .audioWrapper {
     display: flex;
+  }
+  video {
+    width: 80%;
+    height: auto;
   }
 }
