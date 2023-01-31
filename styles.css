@@ -91,6 +91,7 @@ figure div.wrapper {
 
 figure img {
   height: 100%;
+  width: auto;
 }
 
 .step {
@@ -356,7 +357,7 @@ button:hover{
     text-align: right;
   }
   .step-2 {
-    height: 40vh;
+    height: 50vh;
     margin: 0 2em 0 2em;
   }
   #longer{
